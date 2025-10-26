@@ -61,11 +61,11 @@ from FrozenMusic.telegram_client.startup_hooks import precheck_channels
 load_dotenv()
 
 
-API_ID = int(os.environ.get("API_ID"))
-API_HASH = os.environ.get("API_HASH")
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-ASSISTANT_SESSION = os.environ.get("ASSISTANT_SESSION")
-OWNER_ID = int(os.getenv("OWNER_ID", "5268762773"))
+API_ID = int(os.environ.get("27420342"))
+API_HASH = os.environ.get("19a48bb4274b9c194783b00cad822ba0")
+BOT_TOKEN = os.environ.get("8341796020:AAG1BD-My9aIQFsa54xx9xKx238sJ6uBifg")
+ASSISTANT_SESSION = os.environ.get("BQGQiEYAhm5YswWQpJA6J8BJHNNTKrPh6B0qYTo8PddaRGfTNCn144c4tzezwFkNRtfUQN3C2PTAmlfRJyP8n8dXYskbiYJH_0lKsYTgwczW_YQgk2gnoq43hcP_ZCTNkhpGJzq9eEYmX9Vu7-2hc7Sa7J7UxSwtyJIrgFGvWnG_mkue-q2bJW-C8Gj68uV5QaT_ZfbNvmzKpM_Qd1c8ebmN6pOpdMTLbNk6KCQaC7xAVUtdWWpeKHiqmpzOxcVbpttRm86fdlciPNrBHbxB9SaPNjYQL58M9JtamyoClOni-Nf0Y1U016isatgYbFJQWgadXfPtXEKqcZSsKcV__ghJ9rPatAAAAAHqrMogAA")
+OWNER_ID = int(os.getenv("OWNER_ID", "8017178906"))
 
 # ——— Monkey-patch resolve_peer ——————————————
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
@@ -100,9 +100,9 @@ assistant = Client("assistant_account", session_string=ASSISTANT_SESSION)
 call_py = PyTgCalls(assistant)
 
 
-ASSISTANT_USERNAME = None
-ASSISTANT_CHAT_ID = None
-API_ASSISTANT_USERNAME = os.getenv("API_ASSISTANT_USERNAME")
+ASSISTANT_USERNAME = "Hinata_assistantt"
+ASSISTANT_CHAT_ID = "8232159776"
+API_ASSISTANT_USERNAME = os.getenv("Hinata_assistantt")
 
 
 # ─── MongoDB Setup ─────────────────────────────────────────
@@ -208,7 +208,7 @@ async def extract_target_user(message: Message):
     # Otherwise expect an argument like "/ban @user" or "/ban 123456"
     parts = message.text.split()
     if len(parts) < 2:
-        await message.reply("❌ You must reply to a user or specify their @username/user_id.")
+        await message.reply("❌ darling You must reply to a user or specify their @username/user_id.")
         return None
 
     target = parts[1]
@@ -316,8 +316,8 @@ async def fetch_youtube_link_backup(query):
     except Exception as e:
         raise Exception(f"Backup Search API error: {e}")
     
-BOT_NAME = os.environ.get("BOT_NAME", "Frozen Music")
-BOT_LINK = os.environ.get("BOT_LINK", "https://t.me/vcmusiclubot")
+BOT_NAME = os.environ.get("BOT_NAME", "𝑀𝒾𝓉𝓈𝓊𝓇𝒾 × 𝑀𝓊𝓈𝒾𝒸 💞")
+BOT_LINK = os.environ.get("BOT_LINK", "https://t.me/musicmitsuri_bot")
 
 from pyrogram.errors import UserAlreadyParticipant, RPCError
 
@@ -374,15 +374,15 @@ async def start_handler(_, message):
     help_text = to_bold_unicode("Help")
 
     # Fetch from env with fallbacks
-    updates_channel = os.getenv("UPDATES_CHANNEL", "https://t.me/vibeshiftbots")
-    support_group = os.getenv("SUPPORT_GROUP", "https://t.me/Frozensupport1")
+    updates_channel = os.getenv("UPDATES_CHANNEL", "https://t.me/hinuupdates")
+    support_group = os.getenv("SUPPORT_GROUP", "https://t.me/hinusupport")
     start_animation = os.getenv(
         "START_ANIMATION",
-        "https://frozen-imageapi.lagendplayersyt.workers.dev/file/2e483e17-05cb-45e2-b166-1ea476ce9521.mp4"
+        "https://files.catbox.moe/o69pbn.mp4"
     )
 
     caption = (
-        f"👋 нєу {user_link} 💠, 🥀\n\n"
+        f"👋 нєу {user_link} 💠, 💞\n\n"
         f">🎶 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 {BOT_NAME.upper()}! 🎵\n"
         ">🚀 𝗧𝗢𝗣-𝗡𝗢𝗧𝗖𝗛 24×7 𝗨𝗣𝗧𝗜𝗠𝗘 & 𝗦𝗨𝗣𝗣𝗢𝗥𝗧\n"
         ">🔊 𝗖𝗥𝗬𝗦𝗧𝗔𝗟-𝗖𝗟𝗘𝗔𝗥 𝗔𝗨𝗗𝗜𝗢\n"
@@ -436,11 +436,11 @@ async def go_back_callback(_, callback_query):
     support_text = to_bold_unicode("Support")
     help_text = to_bold_unicode("Help")
 
-    updates_channel = os.getenv("UPDATES_CHANNEL", "https://t.me/vibeshiftbots")
-    support_group = os.getenv("SUPPORT_GROUP", "https://t.me/Frozensupport1")
+    updates_channel = os.getenv("UPDATES_CHANNEL", "https://t.me/hinuupdates")
+    support_group = os.getenv("SUPPORT_GROUP", "https://t.me/hinusupport")
 
     caption = (
-        f"👋 нєу {user_link} 💠, 🥀\n\n"
+        f"👋 нєу {user_link} 💠, 💞\n\n"
         f">🎶 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 {BOT_NAME.upper()}! 🎵\n"
         ">🚀 𝗧𝗢𝗣-𝗡𝗢𝗧𝗖𝗛 24×7 𝗨𝗣𝗧𝗜𝗠𝗘 & 𝗦𝗨𝗣𝗣𝗢𝗥𝗧\n"
         ">🔊 𝗖𝗥𝗬𝗦𝗧𝗔𝗟-𝗖𝗟𝗘𝗔𝗥 𝗔𝗨𝗗𝗜𝗢\n"
@@ -707,7 +707,7 @@ async def process_play_command(message: Message, query: str):
 
         total = len(playlist_items)
         reply_text = (
-            f"✨ Added to playlist\n"
+            f"🌷 Added to playlist\n"
             f"Total songs added to queue: {total}\n"
             f"#1 - {playlist_items[0]['title']}"
         )
@@ -757,7 +757,7 @@ async def process_play_command(message: Message, query: str):
                  InlineKeyboardButton("🗑 Clear", callback_data="clear")]
             ])
             await message.reply(
-                f"✨ Added to queue :\n\n"
+                f"🌷 Added to queue :\n\n"
                 f"**❍ Title ➥** {title}\n"
                 f"**❍ Time ➥** {readable}\n"
                 f"**❍ By ➥ ** {message.from_user.first_name if message.from_user else 'Unknown'}\n"
@@ -910,11 +910,11 @@ async def fallback_local_playback(chat_id: int, message: Message, song_info: dic
 
         # Notify
         try:
-            await message.edit(f"Starting local playback for ⚡ {song_info['title']}...")
+            await message.edit(f"Starting local playback for 💞 {song_info['title']}...")
         except Exception:
             message = await bot.send_message(
                 chat_id,
-                f"Starting local playback for ⚡ {song_info['title']}..."
+                f"Starting local playback for 💞 {song_info['title']}..."
             )
 
         # Download & play locally
@@ -930,7 +930,7 @@ async def fallback_local_playback(chat_id: int, message: Message, song_info: dic
         one_line = _one_line_title(song_info["title"])
         base_caption = (
             "<blockquote>"
-            "<b>🎧 Frozen ✘ Music Streaming</b> (Local Playback)\n\n"
+            "<b> 𝑀𝒾𝓉𝓈𝓊𝓇𝒾 × 𝑀𝓊𝓈𝒾𝒸 💞 Streaming</b> (Local Playback)\n\n"
             f"❍ <b>Title:</b> {one_line}\n"
             f"❍ <b>Requested by:</b> {song_info['requester']}"
             "</blockquote>"
@@ -1003,7 +1003,7 @@ async def callback_query_handler(client, callback_query):
 
     # Check admin
     if not await deterministic_privilege_validator(callback_query):
-        await callback_query.answer("❌ You need to be an admin to use this button.", show_alert=True)
+        await callback_query.answer("❌ darling you need to be an admin to use this button.", show_alert=True)
         return
 
     # ----------------- PAUSE -----------------
