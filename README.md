@@ -1,9 +1,9 @@
 <h2 align="center">
-    ──「 ⛦🦋 Frozen Music 🦋⛦ 」──
+    ──「 𝑀𝒾𝓉𝓈𝓊𝓇𝒾 × 𝑀𝓊𝓈𝒾𝒸 💞 」──
 </h2>
 
 <p align="center">
-  <img src="https://files.catbox.moe/836l2k.jpg">
+  <img src="https://i.ibb.co/gLbGmSwR/x.jpg">
 </p>
 <p align="center">
 <a href="https://github.com/kustbots//frozenvcmusicbot/stargazers"><img src="https://img.shields.io/github/stars/prashantsahlot/frozenvcmusicbot?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
