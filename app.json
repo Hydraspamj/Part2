@@ -1,8 +1,8 @@
 {
-  "name": "Frozen Music Bot",
-  "description": "❄️ Frozen Music — Free Telegram VC music bot that runs on Render, Koyeb, Railway & Heroku easily!",
+  "name": "𝑀𝒾𝓉𝓈𝓊𝓇𝒾 × 𝑀𝓊𝓈𝒾𝒸 💞",
+  "description": "𝑀𝒾𝓉𝓈𝓊𝓇𝒾 × 𝑀𝓊𝓈𝒾𝒸 💞 — Free Telegram VC music bot that runs on Render, Koyeb, Railway & Heroku easily!",
   "repository": "https://github.com/prashantsahlot/frozenvcmusicbot",
-  "logo": "https://telegra.ph/file/d02b81736a7e9519c6386.jpg",
+  "logo": "https://i.ibb.co/gLbGmSwR/x.jpg",
   "keywords": ["telegram", "music", "bot", "vc", "python"],
   "env": {
     "API_HASH": {
