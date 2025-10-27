@@ -64,7 +64,7 @@ load_dotenv()
 API_ID = int(os.environ.get("27420342"))
 API_HASH = os.environ.get("19a48bb4274b9c194783b00cad822ba0")
 BOT_TOKEN = os.environ.get("8341796020:AAG1BD-My9aIQFsa54xx9xKx238sJ6uBifg")
-ASSISTANT_SESSION = os.environ.get("BQGQiEYAhm5YswWQpJA6J8BJHNNTKrPh6B0qYTo8PddaRGfTNCn144c4tzezwFkNRtfUQN3C2PTAmlfRJyP8n8dXYskbiYJH_0lKsYTgwczW_YQgk2gnoq43hcP_ZCTNkhpGJzq9eEYmX9Vu7-2hc7Sa7J7UxSwtyJIrgFGvWnG_mkue-q2bJW-C8Gj68uV5QaT_ZfbNvmzKpM_Qd1c8ebmN6pOpdMTLbNk6KCQaC7xAVUtdWWpeKHiqmpzOxcVbpttRm86fdlciPNrBHbxB9SaPNjYQL58M9JtamyoClOni-Nf0Y1U016isatgYbFJQWgadXfPtXEKqcZSsKcV__ghJ9rPatAAAAAHqrMogAA")
+ASSISTANT_SESSION = ("BQGQiEYABZJOlq6nwhqyHuPeWc5QMDkH7p1A3B0vVJlHDnWavfAMuOxTjmbtqI97WoGjdrF1vixx1KJdmmt0aDEhxTKWb2KpC8rSozN04XJ9coDCPTBWMAuHz9dVFwmnEDkoYpAHrFioX6jFmB-C-5nZ8ax5ajkn-5MQE-yglPL4Hh78tcweEBAMYQ8cxcqz9Fq30Q4hfidn_OQtk0Iq2rDIDy7FQ0jIx1Ywe-dYAgRBH3_J3E76gqGXceiLwr6i6l1LeRRlMkRsRemywc7Xlsq1xrQzjzKSEEObssXr7XbiF-K9iQFFWWpXg5nn8ifzMGqZElTV8n84V-XpSKJ0Dj614Vlt0gAAAAH0IlXhAA")
 OWNER_ID = int(os.getenv("OWNER_ID", "8017178906"))
 
 # ——— Monkey-patch resolve_peer ——————————————
@@ -100,13 +100,13 @@ assistant = Client("assistant_account", session_string=ASSISTANT_SESSION)
 call_py = PyTgCalls(assistant)
 
 
-ASSISTANT_USERNAME = "Hinata_assistantt"
-ASSISTANT_CHAT_ID = "8232159776"
-API_ASSISTANT_USERNAME = os.getenv("Hinata_assistantt")
+ASSISTANT_USERNAME = "Mitsuri_assistant"
+ASSISTANT_CHAT_ID = "8390858209"
+API_ASSISTANT_USERNAME = os.getenv("API_ASSISTANT_USERNAME")
 
 
 # ─── MongoDB Setup ─────────────────────────────────────────
-mongo_uri = os.environ.get("MongoDB_url")
+mongo_uri = os.environ.get("mongodb+srv://Hanshinu_db:grenaff123@cluster1.qscbztc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
 mongo_client = MongoClient(mongo_uri)
 db = mongo_client["music_bot"]
 
